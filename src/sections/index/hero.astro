@@ -1,0 +1,25 @@
+---
+import Section_ from 'src/components/section.astro';
+---
+
+<Section_ class="hero">
+	<div>
+		<h1 class="text--hdg--1">Hello world</h1>
+	</div>
+
+	<div>
+		<p>Maybe some content over here.</p>
+	</div>
+
+	<Fragment slot="background">
+		<p>I'm in the background.</p>
+	</Fragment>
+</Section_>
+
+<style lang="scss">
+@use 'src/scss/vars';
+
+h1 {
+	color: vars.$color--brand;
+}
+</style>
